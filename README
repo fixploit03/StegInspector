@@ -1,32 +1,7 @@
-Output file bukan stego
------------------------
-JFIF
-(ICC_PROFILE
-mntrRGB XYZ
-acsp
-        desc
-trXYZ
-gXYZ
-bXYZ
-rTRC
-(gTRC
-(bTRC
-(wtpt
-cprt
-<mluc
-enUS
-XYZ
-XYZ
-XYZ
-para
-XYZ
--mluc
-enUS
+Rilis [26-10-2024]
 
-Output file stego
------------------
-JFIF
-$3br
-%&'()*456789:CDEFGHIJSTUVWXYZcdefghijstuvwxyz
-        #3R
-&'()*56789:CDEFGHIJSTUVWXYZcdefghijstuvwxyz
+StegInspector
+-------------
+StegInspector adalah program Python yang digunakan untuk memeriksa apakah file gambar atau audio mengandung informasi steganografi yang disisipkan menggunakan steghide.
+
+- fixploit03 -

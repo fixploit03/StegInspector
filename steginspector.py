@@ -2,9 +2,34 @@
 # 
 # Program ini merupakan hasil analisa saya
 # membandingkan output dari kedua file 
-# menggunakan strings, dimana output file
-# gambar biasa:
+# menggunakan strings, dimana output masing 
+# masing file.
 #
+# File gambar gambar biasa |
+#---------------------------
+#JFIF                      |
+# (ICC_PROFILE             |
+# mntrRGB XYZ              |
+# acsp                     |
+#         desc             |
+# trXYZ                    |
+# gXYZ                     |
+# bXYZ                     |
+# rTRC c                   |
+# (gTRC                    |
+# (bTRC                    |
+# (wtpt                    |
+# cprt
+# <mlucn 
+# enUS
+# XYZ
+# XYZ    
+# XYZ
+# para
+# XYZ
+# -mluc
+# enUS
+
 # ;)
 
 # Import modul yang dibutuhkan 

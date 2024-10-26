@@ -1,4 +1,10 @@
 # StegInspector
+# 
+# Program ini merupakan hasil analisa saya
+# membandingkan output dari kedua file 
+# menggunakan strings, dimana output file
+# gambar biasa:
+#
 # ;)
 
 # Import modul yang dibutuhkan 

@@ -1,11 +1,13 @@
 # StegInspector
 # ;)
 
+# Import modul yang dibutuhkan 
 import subprocess
 import time
 import re
 import os
 
+# Banner program
 print("""
 ╔═╗╔╦╗╔═╗╔═╗╦╔╗╔╔═╗╔═╗╔═╗╔═╗╔╦╗╔═╗╦═╗
 ╚═╗ ║ ║╣ ║ ╦║║║║╚═╗╠═╝║╣ ║   ║ ║ ║╠╦╝
@@ -18,6 +20,7 @@ print("""
 [*] Team      : ArSec (Arjuna Security)
 """)
 
+# Meminta nama file stego dari pengguna.
 while True:
     try:
         file_stego = input("[#] Masukkan nama file stego: ")
@@ -42,11 +45,14 @@ while True:
 print(f"[*] Mengecek file stego '{file_stego}'...")
 time.sleep(3)
 
+# Perintah untuk mengecek file stego menggunakan strings 
 perintah_cek_file_stego = f"strings {file_stego}"
 
 try:
+    # Cek file stego
     cek_file_stego = subprocess.run(perintah_cek_file_stego, shell=True, capture_output=True, text=True)
     if cek_file_stego.returncode == 0:
+        # Pola file stego
         pola_file_steghide = r"%&'\(\)\*456789:CDEFGHIJSTUVWXYZcdefghijstuvwxyz\n\s*#3R\n&'\(\)\*56789:CDEFGHIJSTUVWXYZcdefghijstuvwxyz"
         if re.search(pola_file_steghide, cek_file_stego.stdout):
             print(f"[+] File '{file_stego}' adalah file stego.")

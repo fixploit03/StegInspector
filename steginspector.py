@@ -66,26 +66,26 @@ print(f"""
 # Meminta nama file stego dari pengguna.
 while True:
     try:
-        file_stego = input("[#] Masukkan nama file stego: ")
+        file_stego = input(f"{p}[{b}#{p}] Masukkan nama file stego: ")
         if not file_stego:
-            print(f"[-] File stego tidak boleh kosong.")
+            print(f"{p}[{m}-{p}] File stego tidak boleh kosong.{r}")
             continue 
         if not os.path.isfile(file_stego):
-            print(f"[-] File stego '{file_stego}' tidak ditemukan.")
+            print(f"{p}[{m}-{p}] File stego '{file_stego}' tidak ditemukan.{r}")
             continue
         # Cek ekstensi file stego
         if not file_stego.endswith((".jpg", ".jpeg", ".bmp", ".wav", ".au")):
-            print(f"[-] File '{file_stego}' bukan file stego.")
+            print(f"{p}[{m}-{p}] File '{file_stego}' bukan file stego.{r}")
             continue
         break
     except KeyboardInterrupt:
-        print(f"\n[-] Program dihentikan oleh pengguna.")
+        print(f"\n{p}[{m}-{p}] Program dihentikan oleh pengguna.{r}")
         exit(1)
     except Exception as e:
-        print(f"[-] Terjadi kesalahan: {e}")
+        print(f"{p}[{m}-{p}] Terjadi kesalahan: {e}{r}")
         exit(1)
         
-print(f"[*] Mengecek file stego '{file_stego}'...")
+print(f"{p}[{b}*{p}] Mengecek file stego '{file_stego}'...{r}")
 time.sleep(3)
 
 # Perintah untuk mengecek file stego menggunakan strings 
@@ -98,11 +98,11 @@ try:
         # Pola file stego
         pola_file_steghide = r"%&'\(\)\*456789:CDEFGHIJSTUVWXYZcdefghijstuvwxyz\n\s*#3R\n&'\(\)\*56789:CDEFGHIJSTUVWXYZcdefghijstuvwxyz"
         if re.search(pola_file_steghide, cek_file_stego.stdout):
-            print(f"[+] File '{file_stego}' adalah file stego.")
+            print(f"{p}[{h}+{p}] File '{file_stego}' adalah file stego.{r}")
         else:
-            print(f"[-] File '{file_stego}' bukan file stego.")
+            print(f"{p}[{m}-{p}] File '{file_stego}' bukan file stego.{r}")
 except KeyboardInterrupt:
-        print(f"\n[-] Program dihentikan oleh pengguna.")
+        print(f"\n{p}[{m}-{p}] Program dihentikan oleh pengguna.{r}")
         exit(1)
 except Exception as e:
-  print(f"[-] Terjadi kesalahan: {e}")
+  print(f"{p}[{m}-{p}] Terjadi kesalahan: {e}{r}")

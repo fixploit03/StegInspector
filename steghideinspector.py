@@ -1,5 +1,6 @@
 import subprocess
 import time
+import re
 
 file_stego = input("[#] Masukkan nama file stego: ")
 

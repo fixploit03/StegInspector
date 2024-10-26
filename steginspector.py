@@ -5,13 +5,19 @@
 # menggunakan strings, dimana output masing 
 # masing file.
 #
+
+
+
+        
+
+#---------------------------
 # File gambar gambar biasa |
 #---------------------------
-#JFIF                      |
-# (ICC_PROFILE             |
-# mntrRGB XYZ              |
-# acsp                     |
-#         desc             |
+# JFIF                     | JFIF
+# (ICC_PROFILE             |    $3br
+# mntrRGB XYZ              | %&'()*456789:CDEFGHIJSTUVWXYZcdefghijstuvwxyz
+# acsp                     | #3R
+#         desc             | &'()*56789:CDEFGHIJSTUVWXYZcdefghijstuvwxyz
 # trXYZ                    |
 # gXYZ                     |
 # bXYZ                     |
@@ -19,16 +25,16 @@
 # (gTRC                    |
 # (bTRC                    |
 # (wtpt                    |
-# cprt
-# <mlucn 
-# enUS
-# XYZ
-# XYZ    
-# XYZ
-# para
-# XYZ
-# -mluc
-# enUS
+# cprt                     |
+# <mluc                    |
+# enUS                     |
+# XYZ                      |
+# XYZ                      |
+# XYZ                      |
+# para                     |
+# XYZ                      |
+# -mluc                    |
+# enUS                     |
 
 # ;)
 

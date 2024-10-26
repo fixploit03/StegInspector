@@ -91,7 +91,7 @@ try:
         if re.search(pola_file_steghide, cek_file_stego.stdout):
             print(f"[+] File '{file_stego}' adalah file stego.")
         else:
-            print(f"[-] File '{file_stego}' bukan file stego.{r}")
+            print(f"[-] File '{file_stego}' bukan file stego.")
 except KeyboardInterrupt:
         print(f"\n[-] Program dihentikan oleh pengguna.")
         exit(1)

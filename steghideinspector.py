@@ -1,3 +1,6 @@
+# StegInspector
+# ;)
+
 import subprocess
 import time
 import re

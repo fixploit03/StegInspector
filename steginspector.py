@@ -1,42 +1,39 @@
 # StegInspector
-# 
-# Program ini merupakan hasil analisa saya
-# membandingkan output dari kedua file 
-# menggunakan strings, dimana output masing 
-# masing file.
-#
-
-
-
-        
-
-#---------------------------
-# File gambar gambar biasa |
-#---------------------------
-# JFIF                     | JFIF
-# (ICC_PROFILE             |    $3br
-# mntrRGB XYZ              | %&'()*456789:CDEFGHIJSTUVWXYZcdefghijstuvwxyz
-# acsp                     | #3R
-#         desc             | &'()*56789:CDEFGHIJSTUVWXYZcdefghijstuvwxyz
-# trXYZ                    |
-# gXYZ                     |
-# bXYZ                     |
-# rTRC c                   |
-# (gTRC                    |
-# (bTRC                    |
-# (wtpt                    |
-# cprt                     |
-# <mluc                    |
-# enUS                     |
-# XYZ                      |
-# XYZ                      |
-# XYZ                      |
-# para                     |
-# XYZ                      |
-# -mluc                    |
-# enUS                     |
-
 # ;)
+#--------------
+#
+# Program ini merupakan hasil analisis saya
+# yang membandingkan output dari dua file 
+# menggunakan perintah `strings`, di mana output 
+# dari masing-masing file:
+#
+#--------------------------+-----------------------------------------------+
+# File Gambar Biasa        | File Gambar Stego                             |
+#--------------------------+-----------------------------------------------+
+# JFIF                     | JFIF                                          |
+# (ICC_PROFILE             | $3br                                          |
+# mntrRGB XYZ              | %&'()*456789:CDEFGHIJSTUVWXYZcdefghijstuvwxyz |
+# acsp                     |         #3R                                   |
+#         desc             | &'()*56789:CDEFGHIJSTUVWXYZcdefghijstuvwxyz   |
+# trXYZ                    |                                               |
+# gXYZ                     |                                               |
+# bXYZ                     |                                               |
+# rTRC c                   |                                               |
+# (gTRC                    |                                               |
+# (bTRC                    |                                               |
+# (wtpt                    |                                               |
+# cprt                     |                                               |
+# <mluc                    |                                               |
+# enUS                     |                                               |
+# XYZ                      |                                               |
+# XYZ                      |                                               |
+# XYZ                      |                                               |
+# para                     |                                               |
+# XYZ                      |                                               |
+# -mluc                    |                                               |
+# enUS                     |                                               |
+#--------------------------+-----------------------------------------------+
+
 
 # Import modul yang dibutuhkan 
 import subprocess

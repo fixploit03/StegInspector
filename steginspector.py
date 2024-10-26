@@ -61,14 +61,6 @@ print(f"""
 {p}[{b}*{p}] Pembuat   : {b}fixploit03{r}
 {p}[{b}*{p}] Github    : {b}https://github.com/fixploit03/StegInspector/{r}
 {p}[{b}*{p}] Team      : {b}ArSec (Arjuna Security){r}
-
-Menu StegoSuite
----------------
-[0] Update StegoSuite
-[1] Buat file stego
-[2] Cek file stego
-[3] Ekstrak file stego
-[4] Crack file stego
 """)
 
 

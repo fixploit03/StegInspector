@@ -4,4 +4,13 @@ StegInspector
 -------------
 StegInspector adalah program Python yang digunakan untuk memeriksa apakah file gambar atau audio mengandung informasi steganografi yang disisipkan menggunakan steghide.
 
+Proses Instalasi
+----------------
+$ apt-get update
+$ apt-get install binutils 
+$ apt-get install python3
+$ apt-get install git
+$ git clone https://github.com/fixploit03/StegInspector.git
+
+
 - fixploit03 -

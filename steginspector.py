@@ -37,6 +37,7 @@
 
 # Import modul yang dibutuhkan 
 import subprocess
+import platform
 import time
 import re
 import os
@@ -50,6 +51,15 @@ c = "\033[36m" # Cyan
 p = "\033[37m" # Putih 
 r = "\033[0m"  # Reset 
 
+# Cek sistem operasi 
+sistem_operasi = platform.system()
+# Android (Termux) & Linux
+if sistem_operasi == "Linux":
+    os.system("clear")
+else:
+    print(f"{p}[{m}-{p}] Sistem operasi Anda tidak mendukung untuk menjalankan program StegInspector.{r}")
+    exit(1)
+
 # Banner program
 print(f"""
 {c}╔═╗╔╦╗╔═╗╔═╗╦╔╗╔╔═╗╔═╗╔═╗╔═╗╔╦╗╔═╗╦═╗{r}
@@ -62,8 +72,6 @@ print(f"""
 {p}[{b}*{p}] Github    : {b}https://github.com/fixploit03/StegInspector/{r}
 {p}[{b}*{p}] Team      : {b}ArSec (Arjuna Security){r}
 """)
-
-
 
 # Meminta nama file stego dari pengguna.
 while True:

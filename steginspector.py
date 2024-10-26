@@ -41,17 +41,26 @@ import time
 import re
 import os
 
-# Banner program
-print("""
-╔═╗╔╦╗╔═╗╔═╗╦╔╗╔╔═╗╔═╗╔═╗╔═╗╔╦╗╔═╗╦═╗
-╚═╗ ║ ║╣ ║ ╦║║║║╚═╗╠═╝║╣ ║   ║ ║ ║╠╦╝
-╚═╝ ╩ ╚═╝╚═╝╩╝╚╝╚═╝╩  ╚═╝╚═╝ ╩ ╚═╝╩╚═
+# Variabel warna
+m = "\033[31m" # Merah
+h = "\033[32m" # Hijau 
+k = "\033[33m" # Kuning 
+b = "\033[34m" # Biru
+c = "\033[36m" # Cyan
+p = "\033[37m" # Putih 
+r = "\033[0m"  # Reset 
 
-[*] Program   : StegInspector
-[*] Deskripsi : Program Python untuk mengecek file stego
-[*] Pembuat   : fixploit03
-[*] Github    : https://github.com/fixploit03/StegInspector/
-[*] Team      : ArSec (Arjuna Security)
+# Banner program
+print(f"""
+{c}╔═╗╔╦╗╔═╗╔═╗╦╔╗╔╔═╗╔═╗╔═╗╔═╗╔╦╗╔═╗╦═╗{r}
+{c}╚═╗ ║ ║╣ ║ ╦║║║║╚═╗╠═╝║╣ ║   ║ ║ ║╠╦╝{r}
+{c}╚═╝ ╩ ╚═╝╚═╝╩╝╚╝╚═╝╩  ╚═╝╚═╝ ╩ ╚═╝╩╚═{r}
+
+{p}[{b}*{p}] Program   : {b}StegInspector{r}
+{p}[{b}*{p}] Deskripsi : {b}Program Python untuk mengecek file stego{r}
+{p}[{b}*{p}] Pembuat   : {b}fixploit03{r}
+{p}[{b}*{p}] Github    : {b}https://github.com/fixploit03/StegInspector/{r}
+{p}[{b}*{p}] Team      : {b}ArSec (Arjuna Security){r}
 """)
 
 # Meminta nama file stego dari pengguna.

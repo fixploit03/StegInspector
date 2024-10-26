@@ -5,6 +5,17 @@ import subprocess
 import time
 import re
 
+print("""
+===================================
+   ╔═╗╔╦╗╔═╗╔═╗             
+   ╚═╗ ║ ║╣ ║ ╦             
+   ╚═╝ ╩ ╚═╝╚═╝             
+   ╦╔╗╔╔═╗╔═╗╔═╗╔═╗╔╦╗╔═╗╦═╗
+   ║║║║╚═╗╠═╝║╣ ║   ║ ║ ║╠╦╝
+   ╩╝╚╝╚═╝╩  ╚═╝╚═╝ ╩ ╚═╝╩╚═
+===================================
+""")
+
 file_stego = input("[#] Masukkan nama file stego: ")
 
 print(f"[*] Mengecek file stego '{file_stego}'...")

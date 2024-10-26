@@ -47,10 +47,10 @@ print("""
 ╚═╗ ║ ║╣ ║ ╦║║║║╚═╗╠═╝║╣ ║   ║ ║ ║╠╦╝
 ╚═╝ ╩ ╚═╝╚═╝╩╝╚╝╚═╝╩  ╚═╝╚═╝ ╩ ╚═╝╩╚═
 
-[*] Program   : Steg2crack
-[*] Deskripsi : Program Python untuk meng-crack file stego
+[*] Program   : StegInspector
+[*] Deskripsi : Program Python untuk mengecek file stego
 [*] Pembuat   : fixploit03
-[*] Github    : https://github.com/fixploit03/Steg2crack/
+[*] Github    : https://github.com/fixploit03/StegInspector/
 [*] Team      : ArSec (Arjuna Security)
 """)
 
